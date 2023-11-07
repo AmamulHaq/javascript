@@ -6,7 +6,7 @@ let c=true;
 let d="amamul khan";
 
 console.log(a,b,c);
-console.log(typeof d);
+console.log(typeof b);
 
 
 const e={
