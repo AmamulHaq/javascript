@@ -5,7 +5,7 @@ let b=786;
 let c=true;
 let d="amamul khan";
 
-console.log(a,b,c,d);
+console.log(a,b,c);
 console.log(typeof d);
 
 
