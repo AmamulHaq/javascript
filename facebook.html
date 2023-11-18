@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WORK SHOP on html</title>
+  </head>
+  <body>
+    <!-- HELLO HTML!! -->
+
+    <a href="https://www.facebook.com/profile.php?id=100023899232421"
+      >This_is_my_fb_id.</a
+    ><br />
+
+    <img
+      src="photo.jpg"
+      alt="Good Person"
+      height="300"
+      style="border-radius: 50%"
+    />
+
+    <h3 style="font-size: x-large">Amamul Khan (Father)</h3>
+    <p>ISLAMIC⚽Humanity<br />हाम्री आमा>🤍<नेपाली हामी</p>
+
+    
+    </head>
+    <body>
+    
+      <!-- link of fb story from oval button -->
+      <button class="story-button" onclick="redirectToURL()">
+        + Add to story
+      </button>
+    
+      <script>
+        function redirectToURL() {
+          var url = "https://www.facebook.com/stories/create";
+          window.location.href = url;
+        }
+      </script>
+    
+      <!-- link of edit.html -->
+      <button class="edit-button" onclick="redirectToEditPage()">
+        🖍 Edit profile
+      </button>
+    
+      <script>
+        function redirectToEditPage() {
+          window.location.href = "edit.html";
+        }
+      </script>
+    <link rel="stylesheet" type="text/css" href="fb.css">
+    </body>
+</html>

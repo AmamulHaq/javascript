@@ -1,0 +1,32 @@
+
+
+.story-button {
+    border: 1px solid rgb(240, 247, 134);
+    width: 190px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #5589f1;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    margin-bottom: 10px; /* Added to create space between buttons */
+  }
+
+  .edit-button {
+    border: 1px solid rgb(255, 255, 255);
+    width: 190px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #c3cdd8;
+    color: #000000;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+  }
