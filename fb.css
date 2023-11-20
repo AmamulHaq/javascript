@@ -1,16 +1,23 @@
 #parent {
-  background-color: #5589f1;
-  height: "100";
-  width: "380";
+  height: 120px; /* Removed quotes around height value */
+  width: 380px; /* Removed quotes around width value */
   position: relative;
 }
 
 .cphoto {
-  background-color: #fe0707;
+  margin: auto;
+  position: relative; /* Changed from fixed to relative */
+  text-align: center; /* Center align the child elements */
+  top: 28px;
 }
+
 .photo {
-  background-color: #07fe49;
   position: absolute;
+  top: 35px; /* Adjusted the top position */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  border-radius: 50%;
+  border-color: #000000;
 }
 
 .story-button {
@@ -25,6 +32,7 @@
   font-size: 18px;
   text-align: center;
   cursor: pointer;
+  padding: "10px";
 }
 
 .edit-button {
@@ -40,6 +48,12 @@
   font-size: 18px;
   text-align: center;
   cursor: pointer;
+  padding: "10px";
+}
+
+#button {
+  height: 35px;
+  width: 380px;
 }
 .text {
   background-color: white;

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WORK SHOP on html</title>
+    <link rel="stylesheet" type="text/css" href="fb.css" />
     <br />
     <a href="https://www.facebook.com/profile.php?id=100023899232421"
       >This_is_my_fb_id.</a
@@ -13,19 +14,26 @@
   <body>
     <!-- HELLO HTML!! -->
     <div id="parent">
-      <span class="cphoto">
-        <img src="cphoto.jpg" alt="cover photo" height="100" width="220" />
-      </span>
-      <span class="photo">
+      <div class="cphoto">
         <img
-          src="photo.jpg"
-          alt="Good Person"
-          height="70"
-          width="70"
-          style="border-radius: 50%"
+          src="cphoto.jpg"
+          alt="cover photo"
+          height="90"
+          width="220"
+          style="border-radius: 5%"
         />
-      </span>
+        <div class="photo">
+          <img
+            src="photo.jpg"
+            alt="Good Person"
+            height="70"
+            width="70"
+            style="border-radius: 50%"
+          />
+        </div>
+      </div>
     </div>
+
     <br />
     <div class="text" style="font-size: 18px">
       <b>Amamul Khan (Father)</b>
@@ -40,12 +48,17 @@
 
     <!-- link of fb story from oval button -->
 
-    <button class="story-button" onclick="redirectToURL()">
-      + Add to story
-    </button>
-    <button class="edit-button" onclick="redirectToEditPage()">
-      🖍 Edit profile
-    </button>
+    <div
+      id="button"
+      style="position: fixed; display: flex; align-items: center"
+    >
+      <button class="story-button" onclick="redirectToURL()">
+        + Add to story
+      </button>
+      <button class="edit-button" onclick="redirectToEditPage()">
+        🖍 Edit profile
+      </button>
+    </div>
 
     <script>
       function redirectToURL() {
@@ -59,7 +72,5 @@
           "https://www.facebook.com/profile.php?id=100023899232421";
       }
     </script>
-
-    <link rel="stylesheet" type="text/css" href="fb.css" />
   </body>
 </html>
