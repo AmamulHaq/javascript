@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>date</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>date</title>
+  <link rel="stylesheet" type="text/css" href="date.css" />
+
+  <style>
+    h1 {
+      color: rgb(197, 239, 238);
+      text-align: center;
+    }
+  </style>
 </head>
+
 <body>
-    
+  <div class="background">
+    <div class="box">
+      <form>
+        <h1>DATE CONVERTER</h1> <br />
+        <select id="conversionSelector">
+          <option value="ADtoBS">AD to BS</option>
+          <option value="BStoAD">BS to AD</option>
+        </select>
+
+        <div id="result"></div>
+
+        <div class="input">
+          <label for="input"></label>
+          <input type="text" id="inputDate" name="date" placeholder="YY-MM-DD" required />
+        </div>
+        <button class="button" type="button" id="convertButton" onclick="convertDate()">
+          CONVERT
+        </button>
+        <div id="resultAD"></div>
+        <div id="resultBS"></div>
+      </form>
+    </div>
+  </div>
+  <script src="date.js"></script>
 </body>
+
 </html>
