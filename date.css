@@ -19,7 +19,7 @@
   }
   .box {
     position: relative;
-   
+    text-align: center;
     padding: 20px;
     background: transparent;
     border-radius: 15px;
@@ -68,7 +68,9 @@
     text-align: center;
     
   }
-  .change{
+ 
+  #conversionSelector{
+
     background-color:rgb(197, 239, 238);    
     border-radius: 42px;
     font-size: 1em;
@@ -76,5 +78,5 @@
     width:50%;
     border-radius: 42px;
     font-size: 1em;
-    
+
   }

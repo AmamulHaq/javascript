@@ -17,7 +17,7 @@ function convertToAD() {
   let bsDate = inputDate.value;
   let [bsYear, bsMonth, bsDay] = bsDate.split("-").map(Number);
 
-  if (bsDay > 17) {
+  if (bsDay >= 17) {
     bsDay -= 17;
   } else {
     bsDay += 30;
@@ -25,7 +25,7 @@ function convertToAD() {
     bsDay -= 17;
   }
 
-  if (bsMonth > 8) {
+  if (bsMonth >= 8) {
     bsMonth -= 8;
   } else {
     bsMonth += 12;
@@ -45,13 +45,13 @@ function convertToBS() {
   let adDate = inputDate.value;
   let [adYear, adMonth, adDay] = adDate.split("-").map(Number);
 
-  if (adDay < 13) {
+  if (adDay <= 13) {
     adDay += 17;
   } else {
     adDay -= 13;
     ++adMonth;
   }
-  if (adMonth < 4) {
+  if (adMonth <= 4) {
     adMonth += 8;
   } else {
     adMonth -= 4;
