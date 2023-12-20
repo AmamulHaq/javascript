@@ -1,19 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>this is my first html </title>
-</head>
-<body>
-    <h1>learning html code</h1>
-    <h2></h2>
-    <h3></h3>
-    <div> This is div block </div>
-    <p>long long ago the people of the earth stolen fire from the god , this made zew king of the god was very angry with them</p>
-
-    <a href="https://youtu.be/BWdpEGv2XXA?si=RivlG5It017Sc7-L"target="-main">listen song</a><br>
-
-    <iframe width="300" src="https://www.youtube.com/embed/BWdpEGv2XXA?si=NvwSNYRQvx8U5gyl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QA</title>
+    <link rel="stylesheet" type="text/css" href="QA.css" />
+    <style>
+      h1 {
+        color: rgb(197, 239, 238);
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background">
+      <div class="box">
+        <form>
+          <h1>Question and Answer</h1>
+          <br />
+          What is your name?<br />
+          <div class="a1">
+            <input type="text" id="name" name="name" placeholder="name" required />
+          </div>
+          <br />
+          How are you?<br />
+          <div class="a2">
+            <input type="radio" name="mood" value="fine" /> fine
+            <input type="radio" name="mood" value="notfine" /> not fine
+          </div>
+          <br />
+          <button type="button" onclick="submitForm()">Submit</button
+          ><br /><br />
+          <div class="output"></div>
+        </form>
+      </div>
+    </div>
+    <script src="QA.js"></script>
+  </body>
 </html>
