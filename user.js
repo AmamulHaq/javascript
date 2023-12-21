@@ -4,8 +4,8 @@ const prompt = require("prompt-sync")();
 let name = prompt("Enter your full name: ");
 console.log("your name is " + name);
 
-
-console.log("your number is " + Num);
+let no = parseInt(prompt("Enter your no: "));
+console.log("your number is " + no);
 
 let Letter = prompt("Enter any Alphabet: ")[0];
 console.log("your alphabet is " + Letter);
